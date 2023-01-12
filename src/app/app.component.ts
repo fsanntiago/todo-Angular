@@ -23,6 +23,8 @@ export class AppComponent {
         ]),
       ],
     });
+
+    this.load();
   }
 
   add() {
@@ -59,5 +61,14 @@ export class AppComponent {
   save() {
     const data = JSON.stringify(this.todos);
     localStorage.setItem("todos", data);
+  }
+
+  load() {
+    const data = localStorage.getItem("todos");
+    if (data) {
+      this.todos = JSON.parse(data);
+    } else {
+      this.todos = [];
+    }
   }
 }
