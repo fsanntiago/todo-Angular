@@ -1,0 +1,64 @@
+.list-todo {
+  padding: 1rem;
+  margin-block: 3.5rem;
+  border-radius: 10px;
+  background-color: var(--shape);
+  -webkit-box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.39);
+  box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.39);
+}
+
+.list-todo ul {
+  padding: 0.5rem;
+}
+
+.list-todo ul li {
+  margin: 1rem;
+  padding: 1rem;
+  font-style: italic;
+  font-size: 1.5rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actions {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.4rem;
+}
+
+.actions button {
+  opacity: 0.6;
+  transition: opacity 0.8s;
+}
+
+.actions button:hover {
+  opacity: 1;
+  transition: opacity 0.8s;
+}
+
+.actions button i {
+  font-size: 1.6rem;
+}
+
+#modal {
+  text-align: left;
+  padding: 3rem;
+  margin-block: 3.5rem;
+  border-radius: 10px;
+  border-radius: 10px;
+  background-color: var(--shape);
+  -webkit-box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.39);
+  box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.39);
+  list-style: none;
+}
+
+.box-save-button {
+  display: flex;
+  justify-content: center;
+  margin-block: 1.5rem;
+}
